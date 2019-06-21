@@ -1,12 +1,7 @@
 {
   "name": "trymail",
   "private": true,
-  "dependencies": {},
-  "engines": {
-  "yarn": ">= 0.25.2",
-  "node": "10.16.0",
-   "npm": "6.9.0"
-}
+  "dependencies": {}
 }
 
 
