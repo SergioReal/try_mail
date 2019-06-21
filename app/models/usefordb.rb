@@ -1,0 +1,2 @@
+class Usefordb < ApplicationRecord
+end

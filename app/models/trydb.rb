@@ -1,0 +1,2 @@
+class Trydb < ApplicationRecord
+end

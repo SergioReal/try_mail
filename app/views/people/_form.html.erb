@@ -1,0 +1,15 @@
+<%= form_tag("/people/create") do %>
+
+        <% @people.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+
+          <% end %>
+          <p>Name</p>
+        <textarea name="name"><%=@people.name%></textarea>
+        <p>Last Name</p>
+        <textarea name="city"><%=@people.city%></textarea>
+
+        <input type="submit" value="Add">
+
+    <% end %>
