@@ -6339,3 +6339,23 @@ Processing by PeopleController#index as HTML
 Completed 200 OK in 224ms (Views: 199.5ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2019-07-26 16:07:02 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPeople Load (1.0ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:21
+  Rendered people/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 1940ms (Views: 1884.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2019-07-26 16:07:05 +0900
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  [1m[36mPeople Load (0.5ms)[0m  [1m[34mSELECT "people".* FROM "people"[0m
+  ↳ app/views/people/index.html.erb:21
+  Rendered people/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 268ms (Views: 243.1ms | ActiveRecord: 0.5ms)
+
+
