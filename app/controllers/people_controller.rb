@@ -10,7 +10,9 @@ class PeopleController < ApplicationController
   def create
     @people = People.new(
       name: params[:name],
-      city:  params[:city]
+      city:  params[:city],
+      contract_to: params[:contract_to]
+
     )
 
     # respond_to do |format|
